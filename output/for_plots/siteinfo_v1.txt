@@ -1,0 +1,13 @@
+#gpp.reco.2250.A	nee.2250.A	gpp.reco.1500.B	nee.1500.B	vegetation
+US-Vcm	US-Vcm	US-Vcm	US-Vcm	ENF
+US-Vcp	US-Vcp	US-Vcp	US-Vcp	ENF
+US-Mpj	US-Mpj	US-Mpj	US-Mpj	OSH
+US-Fuf	US-Fuf	US-Fuf	US-Fuf	ENF
+#US-Wjs	US-Wjs	US-Wjs	US-Wjs	WSA
+#US-Ses	US-Ses	US-Ses	US-Ses	OSH
+US-Wkg	US-Wkg	US-Wkg	US-Wkg	GRA
+US-SRG	US-SRG	US-SRG	US-SRG	GRA
+US-SRM	US-SRM	US-SRM	US-SRM	WSA
+US-Whs	US-Whs	US-Whs	US-Whs	OSH
+US-Seg	US-Seg	US-Seg	US-Seg	GRA
+#US-Aud	US-Aud	US-Aud	US-Aud	GRA

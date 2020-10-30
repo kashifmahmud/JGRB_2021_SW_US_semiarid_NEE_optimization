@@ -1,0 +1,13 @@
+#sites	vegetation
+US-Vcm	ENF
+US-Vcp	ENF
+US-Mpj	OSH
+US-Fuf	ENF
+US-Wjs	WSA
+US-Ses	OSH
+US-Wkg	GRA
+US-SRG	GRA
+US-SRM	WSA
+US-Whs	OSH
+US-Seg	GRA
+US-Aud	GRA
