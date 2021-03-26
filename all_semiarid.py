@@ -54,8 +54,9 @@ def create_file_from_source(src_file, trg_file):
 # -
 # - Set-up
 # -
-rundir = '/Users/kashifmahmud/IU/Work/All_analyses/semi-arid_sites/' # - CHANGE THIS
+rundir = '/Users/kashifmahmud/IU/Work/All_analyses/SW-US_semiarid/' # - CHANGE THIS
 site_file = rundir+'siteinfo.txt' # - SET-UP THIS FILE FOR ALL SITES (SITE NAME, START YEAR, END YEAR)
+#site_file = rundir+'siteinfo_ses_seg.txt' # - SET-UP THIS FILE FOR ALL SITES (SITE NAME, START YEAR, END YEAR)
 
 # - make output directory(ies)
 outdir = rundir+'output/'
@@ -89,7 +90,7 @@ for ns, ss in enumerate(site_names):
     #%%
 # ---------------------
 
-#    ns = 3
+#    ns = 0
 #    ss = site_names[ns]
     # - get Ameriflux data
     input_flux = input_flux_root.replace("%s", ss)
@@ -161,7 +162,8 @@ for ns, ss in enumerate(site_names):
     flux_new = flux_new[~((flux_new.timestamp.dt.month == 2) & (flux_new.timestamp.dt.day == 29))]
     
     # - merge the data frames to format GPP having forcing time steps
-    flux_merge = pd.merge(left=flux_new,right=flux_noleap, how='outer', left_on='date', right_on='date')       
+#    flux_merge = pd.merge(left=flux_new,right=flux_noleap, how='outer', left_on='date', right_on='date')       
+    flux_merge = pd.merge(left=flux_new,right=flux_noleap, how='left', left_on='date', right_on='date')       
     flux_final = flux_merge.replace(-9999.0, np.nan)
     
     
@@ -286,9 +288,9 @@ for ns, ss in enumerate(site_names):
     del reco._FillValue
     data_flux_cropped.close()
     
-    np.argwhere(np.isnan(gpp[:]))
-    gpp[5215]
-    gpp[5216]
+#    np.argwhere(np.isnan(gpp[:]))
+#    gpp[5215]
+#    gpp[5216]
 
 #data_flux_v0 = Dataset(input_forcing, 'a')
 #tstep = data_flux_v0.variables['tstep']
