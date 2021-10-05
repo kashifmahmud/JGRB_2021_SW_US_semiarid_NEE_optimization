@@ -1,13 +1,13 @@
-#sites	vegetation
-US-Vcm	ENF
-US-Vcp	ENF
-US-Mpj	OSH
-US-Fuf	ENF
-US-Wjs	WSA
-US-Ses	OSH
-US-Wkg	GRA
-US-SRG	GRA
-US-SRM	WSA
-US-Whs	OSH
-US-Seg	GRA
-US-Aud	GRA
+#sites	vegetation	dominated PFT
+US-Vcm	ENF	ENT
+US-Vcp	ENF	ENT
+US-Mpj	OSH	ENT
+US-Fuf	ENF	ENT
+US-Wjs	WSA	C4G
+US-Ses	OSH	Shr
+US-Wkg	GRA	C4G	
+US-SRG	GRA	C4G
+US-Seg	GRA	C4G
+US-SRM	WSA	Shr
+US-Whs	OSH	Shr
+US-Aud	GRA	C4G
